@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+<!-- Header section -->
+<header class="header">
+        <div class="logo-container">
+            <img src="./images/node-21.png" alt="Furniro Logo" class="logo">
+            <span class="brand-name">Furniro</span>
+        </div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="#"><img src="./images/vector-12.svg" alt="user"></a>
+            <a href="#"><img src="./images/vector-14.svg" alt="search"></a>
+            <a href="#"><img src="./images/vector-16.svg" alt="heart"></a>
+            <a href="#"><img src="./images/vector-18.svg" alt="cart"></a>
+        </div>
+    </header>
+<!-- hero section cart -->
+    <section class="hero-section-cart">
+        <div class="herocart-text">
+            <div class="cartlogo"><img src="./images/node-21.png" alt="Furniro Logo" class="logo"></div>
+            <h1>CART</h1><p>HOME &gt; Cart</p>
+        </div>
+    </section> 
+<!-- cart description -->
+    <section class="cart-description">
+        <div class="container">
+            <div class="cart-items">
+                <div class="cart-header">
+                    <div>Product</div>
+                    <div>Price</div>
+                    <div>Quantity</div>
+                    <div>Subtotal</div>
+                </div>
+                <div class="cart-item">
+                    <div class="product-info">
+                        <div class="product-image">
+                            <img src="./cart/asgaard-sofa-5-51.png" alt="Aagaard sofa" style="max-width: 90%; max-height: 90%;">
+                        </div>
+                        <div class="product-name">Aagaard sofa</div>
+                    </div>
+                    <div class="price">Rs. 250,000.00</div>
+                    <div>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                    </div>
+                    <div class="subtotal">Rs. 250,000.00</div>
+                    <div class="delete-icon">
+                        <img src="./cart/vector-56.svg" alt="delete" class="delete">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cart-summary">
+                <h2>Cart Totals</h2><br>
+                <div class="subtotal-line">
+                    <span>Subtotal</span>
+                    <span>Rs. 250,000.00</span>
+                </div><br>
+                <div class="total-line">
+                    <span>Total</span>
+                    <span class="total-price">Rs. 250,000.00</span>
+                </div>
+                <br>
+                <a href="checkout.html">
+                    <button class="checkout-button">Check Out</button>
+                </a>
+            </div>
+        </div>
+    </section>
+<!-- benefits section -->
+    <section class="nav3">
+        <div class="benefits-container">
+            <div class="benefits-wrapper">
+                <div class="benefit-item">
+                    <div class="icon-wrapper">
+                        <svg viewBox="0 0 24 24">
+                            <img src="./shop/vector-460.svg" alt="trophy" class="trophy">
+                        </svg>
+                    </div>
+                    <div class="text-wrapper">
+                        <p class="benefit-title">High Quality</p>
+                        <p class="benefit-subtitle">crafted from top materials</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="icon-wrapper">
+                        <svg viewBox="0 0 24 24">
+                            <img src="./shop/vector-467.svg" alt="check" class="check">
+                        </svg>
+                    </div>
+                    <div class="text-wrapper">
+                        <p class="benefit-title">Warranty Protection</p>
+                        <p class="benefit-subtitle">Over 2 years</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="icon-wrapper">
+                        <svg viewBox="0 0 24 24">
+                            <img src="./shop/vector-473.svg" alt="freeshipping" class="freeshipping">
+                        </svg>
+                    </div>
+                    <div class="text-wrapper">
+                        <p class="benefit-title">Free Shipping</p>
+                        <p class="benefit-subtitle">Order over 150 $</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="icon-wrapper">
+                        <svg viewBox="0 0 24 24">
+                            <img src="./shop/vector-479.svg" alt="support" class="support">
+                        </svg>
+                    </div>
+                    <div class="text-wrapper">
+                        <p class="benefit-title">24 / 7 Support</p>
+                        <p class="benefit-subtitle">Dedicated support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- footer section -->
+    <section class="cart-footer">
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-main">
+                    <div class="footer-company">
+                        <h3>Funiro.</h3>
+                        <p>400 University Drive Suite 200 Coral</p>
+                        <p>Gables,</p>
+                        <p>FL 33134 USA</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>Links</h4>
+                            <a href="index.html">Home</a>
+                            <a href="shop.html">Shop</a>
+                            <a href="#">About</a>
+                            <a href="#">Contact</a>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Help</h4>
+                            <a href="#">Payment Options</a>
+                            <a href="#">Returns</a>
+                            <a href="#">Privacy Policies</a>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Newsletter</h4>
+                            <div class="newsletter">
+                                <input type="email" placeholder="Enter Your Email Address">
+                                <button>SUBSCRIBE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer-bottom">
+                    <p>2023 funiro. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

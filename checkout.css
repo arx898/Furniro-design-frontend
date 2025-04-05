@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+/* Define CSS variables or remove this block if not needed */
+:root {
+    --primary-color: #000000; /* Black shade for primary elements */
+    --secondary-color: #000000; /* Black shade for secondary elements */
+    --background-color: #efeff3; /* Light gray for background */
+    --text-color: #333; /* Dark gray for text */
+    --font-size-base: 16px; /* Base font size */
+    --border-radius: 5px; /* Default border radius */
+    --transition-duration: 0.3s; /* Smooth transition duration */
+}
+body{
+    background-color: white;
+}
+
+/* Navbar styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+.navbar li {
+    margin: 0 15px;
+}
+.navbar a {
+    color: inherit;
+    text-decoration: none;
+    }
+.nav-icons {
+    display: flex;
+    gap: 25px;
+    padding-right: 40px;
+}
+
+
+
+.hero-section-checkout{
+    background-image: url(./checkout/rectangle-1-23.png);
+    background-size: cover;
+    position: relative;
+    height: 70vh;
+    margin-bottom: 70px;
+}
+.herocheck-text{
+    vertical-align: middle;
+    padding-top: 150px;
+    font-size: xx-large;
+    text-align: center;
+}
+.herocheck-text p{
+    font-size: 20px;
+    text-align: center;
+}
+.checkoutlogo{
+    padding-bottom: 20px; 
+}
+
+
+
+.check-form-section{
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 20px;
+}
+h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.billing-form {
+    flex: 6;
+    padding-right: 30px;
+}
+
+.order-summary {
+    flex: 4;
+    border-left: 1px solid #eee;
+    padding-left: 30px;
+}
+
+.input-label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: normal;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-row-split {
+    display: flex;
+    gap: 10px;
+}
+
+.form-row-split > div {
+    flex: 1;
+}
+
+input[type="text"], 
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    padding-right: 30px;
+}
+
+.product-table {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.product-table tr {
+    line-height: 2;
+}
+
+.product-table th {
+    text-align: left;
+    font-weight: 500;
+}
+
+.product-table td {
+    text-align: right;
+}
+
+.product-table .total {
+    font-weight: bold;
+    font-size: 16px;
+    color: #ff9800;
+}
+
+.payment-methods {
+    margin: 20px 0;
+}
+
+.payment-option {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.payment-option input {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.payment-option-label {
+    font-weight: 500;
+}
+
+.payment-description {
+    color: #777;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: justify;
+    /* margin-left: 23px; */
+}
+
+
+.privacy-note {
+    padding-top: 20px;
+    color: #777;
+    font-size: 12px;
+    margin: 20px 0;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.privacy-link {
+    color: #333;
+    text-decoration: underline;
+}
+
+.place-order-btn {
+    background-color: #fff;
+    color: #333;
+    border: 3px solid #979797;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.place-order-btn:hover {
+    background-color: #eeebeb;
+}
+
+
+.nav3{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    padding-top: 50px;
+    
+}
+.benefits-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #e0d5c8;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.benefits-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.benefit-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.benefit-subtitle {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+    line-height: 1.4;
+}
+
+svg {
+    width: 5px;
+    height: 5px;
+    stroke: #333;
+    fill: none;
+}
+
+.checkout-footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin-top: 70px;
+}
+.footer {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #e5e5e5;
+}
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.footer-company {
+    flex: 1;
+}
+.footer-company h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.footer-company p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+.footer-links {
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
+}
+.footer-column a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: normal;
+}
+.newsletter {
+    display: flex;
+    align-items: center;
+}
+.newsletter input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-right: none;
+    width: 200px;
+}
+.newsletter button {
+    padding: 8px 15px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #333;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.footer-bottom {
+    padding: 1px 0;
+    color: #666;
+    font-size: 13px;
+}
+.footer-bottom p {
+    margin: 0;
+    text-align: left;
+}
+
+
+
